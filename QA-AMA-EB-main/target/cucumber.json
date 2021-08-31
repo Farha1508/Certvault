@@ -1,0 +1,1114 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "before": [
+          {
+            "result": {
+              "duration": 2692414700,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.InitializeTest()"
+            }
+          }
+        ],
+        "line": 3,
+        "name": "Login, Add and Details Policy, KPI\u0027s, Grid, Import Policies and Logout",
+        "description": "",
+        "id": "ama-eb-login;login,-add-and-details-policy,-kpi\u0027s,-grid,-import-policies-and-logout",
+        "after": [
+          {
+            "result": {
+              "duration": 334883400,
+              "status": "passed"
+            },
+            "match": {
+              "location": "Hooks.TearDownTest()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 4636912500,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "I navigate to login page of EB app",
+            "match": {
+              "location": "MyStepdefs.iNavigateToLoginPageOfEBApp()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 231369600,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "I enter login credentials",
+            "match": {
+              "location": "MyStepdefs.iEnterLoginCredentials(DataTable)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "email",
+                  "password"
+                ],
+                "line": 7
+              },
+              {
+                "cells": [
+                  "renuka.gundu@patracorp.net",
+                  "Mar@2019"
+                ],
+                "line": 8
+              }
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 41316943100,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "I click on Sign In button",
+            "match": {
+              "location": "MyStepdefs.iClickOnSignInButton()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 6214538200,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "Pagination value",
+            "match": {
+              "location": "MyStepdefs.paginationValue(DataTable)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "pagevalue"
+                ],
+                "line": 11
+              },
+              {
+                "cells": [
+                  "20"
+                ],
+                "line": 12
+              }
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 5304406200,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "Get the KPI Count",
+            "match": {
+              "location": "MyStepdefs.getTheKpiCOunt()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 10135642100,
+              "status": "passed"
+            },
+            "comments": [
+              {
+                "line": 15,
+                "value": "##################--------Add Policy-------####################"
+              }
+            ],
+            "line": 16,
+            "name": "Click on Add Policy",
+            "match": {
+              "location": "MyStepdefs.clickOnAddPolicy()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 21419262800,
+              "status": "passed"
+            },
+            "line": 17,
+            "name": "Enter Add Policy Details",
+            "match": {
+              "location": "MyStepdefs.enterAddPolicyDetails(DataTable)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "AccountManager",
+                  "Company",
+                  "Status",
+                  "BusinessType",
+                  "NewExisting",
+                  "Date",
+                  "EmployerGroup",
+                  "CoverageType",
+                  "PriorCarrier",
+                  "PriorPlanName",
+                  "ExpiringPremium",
+                  "ExpiringCommission",
+                  "RenewalNewCarrier",
+                  "RenewalNewPlanName",
+                  "RenewalNewPremium",
+                  "RenewalNewCommission",
+                  "LeadSource"
+                ],
+                "line": 18
+              },
+              {
+                "cells": [
+                  "renuka Gundu",
+                  "ONI Risk Partners - PB",
+                  "Untouched",
+                  "Prospect",
+                  "New",
+                  "16/04/2019",
+                  "Tes1",
+                  "Life",
+                  "Aetna",
+                  "Test",
+                  "12",
+                  "12",
+                  "Aetna",
+                  "Test",
+                  "12",
+                  "12",
+                  "Agency"
+                ],
+                "line": 19
+              }
+            ],
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 14199229900,
+              "status": "passed"
+            },
+            "line": 20,
+            "name": "Click on Submit button",
+            "match": {
+              "location": "MyStepdefs.clickOnSubmitButton()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 3378872300,
+              "status": "passed"
+            },
+            "comments": [
+              {
+                "line": 22,
+                "value": "##################--------Details Policy-------####################"
+              }
+            ],
+            "line": 24,
+            "name": "I select a record under Policies tab",
+            "match": {
+              "location": "MyStepdefs.iSelectARecordUnderPoliciesTab()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 11122255100,
+              "status": "passed"
+            },
+            "line": 25,
+            "name": "Navigate to Policy Details section",
+            "match": {
+              "location": "MyStepdefs.navigateToPolicyDetailsSection(DataTable)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "AccountManagerDetails",
+                  "CompanyDetails",
+                  "StatusDetails",
+                  "BusinessTypeDetails",
+                  "NewExistingDetails",
+                  "DateDetails",
+                  "EmployerGroupDetails",
+                  "CoverageTypeDetails",
+                  "PriorCarrierDetails",
+                  "ExpiringPremiumDetails",
+                  "ExpiringCommissionDetails",
+                  "RenewalNewCarrierDetails",
+                  "RenewalNewPremiumDetails",
+                  "RenewalNewCommissionDetails",
+                  "LeadSourceDetails"
+                ],
+                "line": 26
+              },
+              {
+                "cells": [
+                  "Prathima M",
+                  "ONI Risk Partners - PB",
+                  "In Progress",
+                  "Renewal",
+                  "Existing",
+                  "20/04/2019",
+                  "xyz",
+                  "Vision",
+                  "Chubb",
+                  "",
+                  "13",
+                  "Chubb",
+                  "13",
+                  "13",
+                  "Existing Customer"
+                ],
+                "line": 27
+              }
+            ],
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 10120653100,
+              "status": "passed"
+            },
+            "comments": [
+              {
+                "line": 29,
+                "value": "###########---------Questions,Notes,History Tabs----###########"
+              }
+            ],
+            "line": 31,
+            "name": "Click on Add Note Button",
+            "match": {
+              "location": "MyStepdefs.clickOnAddNoteButton()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 10283450000,
+              "status": "passed"
+            },
+            "line": 32,
+            "name": "Input values in the Note pop-up",
+            "match": {
+              "location": "MyStepdefs.inputValuesInTheNotePopUp(DataTable)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "Title",
+                  "Description"
+                ],
+                "line": 33
+              },
+              {
+                "cells": [
+                  "Note",
+                  "Note"
+                ],
+                "line": 34
+              }
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 10374444500,
+              "status": "passed"
+            },
+            "line": 35,
+            "name": "Input values in the Questions tab",
+            "match": {
+              "location": "MyStepdefs.inputValuesInTheQuestionsTab(DataTable)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "Question1",
+                  "Question2",
+                  "Question3",
+                  "Question4"
+                ],
+                "line": 36
+              },
+              {
+                "cells": [
+                  "Yes",
+                  "Yes",
+                  "Yes",
+                  "Yes"
+                ],
+                "line": 37
+              }
+            ],
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 10170518000,
+              "status": "passed"
+            },
+            "line": 38,
+            "name": "Click on Notes Tab",
+            "match": {
+              "location": "MyStepdefs.clickOnNotesTab()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 10123928600,
+              "status": "passed"
+            },
+            "line": 39,
+            "name": "Click on History tab",
+            "match": {
+              "location": "MyStepdefs.clickOnHistoryTab()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 15136880400,
+              "status": "passed"
+            },
+            "line": 40,
+            "name": "Click on Submit and Close button",
+            "match": {
+              "location": "MyStepdefs.clickOnSubmitAndCloseButton()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 12325041800,
+              "status": "passed"
+            },
+            "comments": [
+              {
+                "line": 42,
+                "value": "################--------Grid Search Filters--------##############"
+              }
+            ],
+            "line": 44,
+            "name": "Search with all the filters in the grid",
+            "match": {
+              "location": "MyStepdefs.searchWithAllTheFiltersInTheGrid(DataTable)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "AccountManagerDetails",
+                  "CompanyDetails",
+                  "StatusDetails",
+                  "BusinessTypeDetails",
+                  "EmployerGroupDetails",
+                  "CoverageTypeDetails",
+                  "ExpiringPremiumDetails",
+                  "ExpiringCommissionDetails",
+                  "PriorCarrierDetails"
+                ],
+                "line": 45
+              },
+              {
+                "cells": [
+                  "Prathima M",
+                  "ONI Risk Partners - PB",
+                  "In Progress",
+                  "Renewal",
+                  "xyz",
+                  "Vision",
+                  "13",
+                  "13",
+                  "Aetna"
+                ],
+                "line": 46
+              }
+            ],
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 8095285100,
+              "status": "passed"
+            },
+            "comments": [
+              {
+                "line": 48,
+                "value": "#######################---------KPI\u0027s-----------###############"
+              }
+            ],
+            "line": 50,
+            "name": "Click on My Prospects KPI",
+            "match": {
+              "location": "MyStepdefs.clickOnMyProspectsKPI()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 10134966600,
+              "status": "passed"
+            },
+            "line": 51,
+            "name": "I search a record with the Employer Group",
+            "match": {
+              "location": "MyStepdefs.iSearchARecordWithTheEmployerGroup(DataTable)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "employergroupsearch"
+                ],
+                "line": 52
+              },
+              {
+                "cells": [
+                  "tes1"
+                ],
+                "line": 53
+              }
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 3094841200,
+              "status": "passed"
+            },
+            "line": 54,
+            "name": "I select a record under Policies tab",
+            "match": {
+              "location": "MyStepdefs.iSelectARecordUnderPoliciesTab()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 14165290900,
+              "status": "passed"
+            },
+            "line": 55,
+            "name": "I move the record to Renewal",
+            "match": {
+              "location": "MyStepdefs.iMoveTheRecordToRenewal(DataTable)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "MovRec"
+                ],
+                "line": 56
+              },
+              {
+                "cells": [
+                  "Renewal"
+                ],
+                "line": 57
+              }
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 15100078300,
+              "status": "passed"
+            },
+            "line": 58,
+            "name": "Click on Submit and Close button",
+            "match": {
+              "location": "MyStepdefs.clickOnSubmitAndCloseButton()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 10034660800,
+              "status": "passed"
+            },
+            "line": 59,
+            "name": "Get the My Prospects KPI Count",
+            "match": {
+              "location": "MyStepdefs.getTheMyProspectsKPICount()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 4130712400,
+              "status": "passed"
+            },
+            "line": 60,
+            "name": "Click on My Renewals KPI",
+            "match": {
+              "location": "MyStepdefs.clickOnMyRenewalsKPI()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 10139240100,
+              "status": "passed"
+            },
+            "line": 61,
+            "name": "I search a record with the Employer Group",
+            "match": {
+              "location": "MyStepdefs.iSearchARecordWithTheEmployerGroup(DataTable)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "employergroupsearch"
+                ],
+                "line": 62
+              },
+              {
+                "cells": [
+                  "tes1"
+                ],
+                "line": 63
+              }
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 3044874500,
+              "status": "passed"
+            },
+            "line": 64,
+            "name": "I select a record under Policies tab",
+            "match": {
+              "location": "MyStepdefs.iSelectARecordUnderPoliciesTab()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 14196219600,
+              "status": "passed"
+            },
+            "line": 65,
+            "name": "I move the record to New Business",
+            "match": {
+              "location": "MyStepdefs.iMoveTheRecordToNewBusiness(DataTable)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "MovRec1"
+                ],
+                "line": 66
+              },
+              {
+                "cells": [
+                  "New"
+                ],
+                "line": 67
+              }
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 15126509300,
+              "status": "passed"
+            },
+            "line": 68,
+            "name": "Click on Submit and Close button",
+            "match": {
+              "location": "MyStepdefs.clickOnSubmitAndCloseButton()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 10075001600,
+              "status": "passed"
+            },
+            "line": 69,
+            "name": "Get the My Renewals KPI Count",
+            "match": {
+              "location": "MyStepdefs.getTheMyRenewalsKPICount()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 4152007900,
+              "status": "passed"
+            },
+            "line": 70,
+            "name": "Click On My New Business KPI",
+            "match": {
+              "location": "MyStepdefs.clickOnMyNewBusinessKPI()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 10125952900,
+              "status": "passed"
+            },
+            "line": 71,
+            "name": "I search a record with the Employer Group",
+            "match": {
+              "location": "MyStepdefs.iSearchARecordWithTheEmployerGroup(DataTable)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "employergroupsearch"
+                ],
+                "line": 72
+              },
+              {
+                "cells": [
+                  "tes1"
+                ],
+                "line": 73
+              }
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 3080229200,
+              "status": "passed"
+            },
+            "line": 74,
+            "name": "I select a record under Policies tab",
+            "match": {
+              "location": "MyStepdefs.iSelectARecordUnderPoliciesTab()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 14214634900,
+              "status": "passed"
+            },
+            "line": 75,
+            "name": "Move the record to Lost Business",
+            "match": {
+              "location": "MyStepdefs.moveTheRecordToLostBusiness(DataTable)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "MovRec2"
+                ],
+                "line": 76
+              },
+              {
+                "cells": [
+                  "Lost"
+                ],
+                "line": 77
+              }
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 15112842100,
+              "status": "passed"
+            },
+            "line": 78,
+            "name": "Click on Submit and Close button",
+            "match": {
+              "location": "MyStepdefs.clickOnSubmitAndCloseButton()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 10057180400,
+              "status": "passed"
+            },
+            "line": 79,
+            "name": "Get the My New Business KPI Count",
+            "match": {
+              "location": "MyStepdefs.getTheMyNewBusinessKPICount()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 2097984300,
+              "status": "passed"
+            },
+            "line": 80,
+            "name": "Click On My Lost Business KPI",
+            "match": {
+              "location": "MyStepdefs.clickOnMyLostBusinessKPI()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 10151648600,
+              "status": "passed"
+            },
+            "line": 81,
+            "name": "I search a record with the Employer Group",
+            "match": {
+              "location": "MyStepdefs.iSearchARecordWithTheEmployerGroup(DataTable)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "employergroupsearch"
+                ],
+                "line": 82
+              },
+              {
+                "cells": [
+                  "tes1"
+                ],
+                "line": 83
+              }
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 3063328100,
+              "status": "passed"
+            },
+            "line": 84,
+            "name": "I select a record under Policies tab",
+            "match": {
+              "location": "MyStepdefs.iSelectARecordUnderPoliciesTab()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 14107896700,
+              "status": "passed"
+            },
+            "line": 85,
+            "name": "Move the record to Work in Progress",
+            "match": {
+              "location": "MyStepdefs.moveTheRecordToWorkInProgress(DataTable)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "MovRec3"
+                ],
+                "line": 86
+              },
+              {
+                "cells": [
+                  "Work in Progress"
+                ],
+                "line": 87
+              }
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 15089763200,
+              "status": "passed"
+            },
+            "line": 88,
+            "name": "Click on Submit and Close button",
+            "match": {
+              "location": "MyStepdefs.clickOnSubmitAndCloseButton()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 10058537200,
+              "status": "passed"
+            },
+            "line": 89,
+            "name": "Get the My Lost Business KPI Count",
+            "match": {
+              "location": "MyStepdefs.getTheMyLostBusinessKPICount()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 10176365600,
+              "status": "passed"
+            },
+            "line": 90,
+            "name": "Click on reset button",
+            "match": {
+              "location": "MyStepdefs.clickOnResetButton()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 3072295300,
+              "status": "passed"
+            },
+            "line": 91,
+            "name": "I select a record under Policies tab",
+            "match": {
+              "location": "MyStepdefs.iSelectARecordUnderPoliciesTab()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 7175368900,
+              "status": "passed"
+            },
+            "line": 92,
+            "name": "Move the record to YTD",
+            "match": {
+              "location": "MyStepdefs.moveTheRecordToYTD(DataTable)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "MovRec4"
+                ],
+                "line": 93
+              },
+              {
+                "cells": [
+                  "Renewal"
+                ],
+                "line": 94
+              }
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 15087884400,
+              "status": "passed"
+            },
+            "line": 95,
+            "name": "Click on Submit and Close button",
+            "match": {
+              "location": "MyStepdefs.clickOnSubmitAndCloseButton()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 4164688000,
+              "status": "passed"
+            },
+            "line": 96,
+            "name": "Click on YTD KPI",
+            "match": {
+              "location": "MyStepdefs.clickOnYTDKPI()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 10131842100,
+              "status": "passed"
+            },
+            "line": 97,
+            "name": "I search a record with the Employer Group",
+            "match": {
+              "location": "MyStepdefs.iSearchARecordWithTheEmployerGroup(DataTable)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "employergroupsearch"
+                ],
+                "line": 98
+              },
+              {
+                "cells": [
+                  "tes1"
+                ],
+                "line": 99
+              }
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 10171811200,
+              "status": "passed"
+            },
+            "comments": [
+              {
+                "line": 100,
+                "value": "###################-------Global Search-------###################"
+              }
+            ],
+            "line": 102,
+            "name": "user searches with the following global value",
+            "match": {
+              "location": "MyStepdefs.userSearchesWithTheFollowingGlobalValue(DataTable)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "globalsearch"
+                ],
+                "line": 103
+              },
+              {
+                "cells": [
+                  "tes1"
+                ],
+                "line": 104
+              }
+            ],
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 5221357000,
+              "status": "passed"
+            },
+            "comments": [
+              {
+                "line": 106,
+                "value": "##################--------Delete Policy-------####################"
+              }
+            ],
+            "line": 108,
+            "name": "Click on Delete button",
+            "match": {
+              "location": "MyStepdefs.clickOnDeleteButton()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 15143318000,
+              "status": "passed"
+            },
+            "comments": [
+              {
+                "line": 110,
+                "value": "##################--------Import Policy-------####################"
+              }
+            ],
+            "line": 112,
+            "name": "Click on Import Policies button",
+            "match": {
+              "location": "MyStepdefs.clickOnImportPoliciesButton()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 2088017500,
+              "status": "passed"
+            },
+            "line": 113,
+            "name": "Click on Import Submit button",
+            "match": {
+              "location": "MyStepdefs.clickOnImportSubmitButton()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 10198220900,
+              "status": "passed"
+            },
+            "line": 114,
+            "name": "Click alert OK button",
+            "match": {
+              "location": "MyStepdefs.clickAlertOKButton()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 9496726600,
+              "status": "passed"
+            },
+            "comments": [
+              {
+                "line": 116,
+                "value": "##################--------Reports-------------####################"
+              }
+            ],
+            "line": 118,
+            "name": "Click on reports button",
+            "match": {
+              "location": "MyStepdefs.clickOnReportsButton()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 5643264000,
+              "status": "passed"
+            },
+            "comments": [
+              {
+                "line": 120,
+                "value": "##################--------Logout-------####################"
+              }
+            ],
+            "line": 122,
+            "name": "Click on patra corp link",
+            "match": {
+              "location": "MyStepdefs.clickOnPatraCorpLink()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 79517000,
+              "status": "passed"
+            },
+            "line": 123,
+            "name": "Click on Logout icon",
+            "match": {
+              "location": "MyStepdefs.clickOnLogoutIcon()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 2683725200,
+              "status": "passed"
+            },
+            "line": 124,
+            "name": "Click Logout button",
+            "match": {
+              "location": "MyStepdefs.clickLogoutButton()"
+            },
+            "keyword": "And "
+          }
+        ]
+      }
+    ],
+    "name": "AMA-EB Login",
+    "description": "",
+    "id": "ama-eb-login",
+    "keyword": "Feature",
+    "uri": "AMA.feature"
+  }
+]

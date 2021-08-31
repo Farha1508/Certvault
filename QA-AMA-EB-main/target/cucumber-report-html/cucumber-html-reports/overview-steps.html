@@ -1,0 +1,502 @@
+<!DOCTYPE html>
+<html>
+<head>
+  
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<script type="text/javascript" src="js/jquery.tablesorter.min.js"></script>
+<script type="text/javascript" src="js/Chart.min.js"></script>
+<script type="text/javascript" src="js/moment.min.js"></script>
+<script type="text/javascript" src="js/bootstrap.min.js"></script>
+
+<link rel="stylesheet" href="css/bootstrap.min.css" type="text/css"/>
+<link rel="stylesheet" href="css/cucumber.css" type="text/css"/>
+<link rel="stylesheet" href="css/font-awesome.min.css"/>
+<link rel="shortcut icon" href="images/favicon.png"/>
+
+<script type="text/javascript">
+$(document).ready(function() {
+    // this will tell tablesorter to try looking for the data-value attribute
+    // if present, it'll sort by that instead
+    // otherwise, it'll sort by the text content of the table cell
+    $("#tablesorter").tablesorter({
+        textAttribute: 'data-value',
+        // ignores the first row of the header, the 'scenario', 'steps', since
+        // sorting those doesn't make sense
+        selectorHeaders: '> thead tr:not(.dont-sort) th',
+        // use a stable sort
+        sortStable: true
+    });
+});
+</script>
+
+
+
+
+
+
+
+
+
+
+
+  
+<title>Cucumber Reports (no 1) - Steps Overview</title>
+
+</head>
+<body>
+
+<nav class="navbar navbar-default navbar-fixed-top" id="navigation">
+  <div class="container-fluid">
+    <div class="collapse navbar-collapse">
+      <p class="navbar-text navbar-left">Cucumber Report</p>
+      <ul class="nav navbar-nav navbar-right">
+                <li role="presentation" ><a href="overview-features.html">Features</a></li>
+        <li role="presentation" ><a href="overview-tags.html">Tags</a></li>
+        <li role="presentation"     class="active" ><a href="overview-steps.html">Steps</a></li>
+                <li role="presentation" ><a href="overview-failures.html">Failures</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+
+<div class="container-fluid">
+  <div class="col-md-5 col-md-offset-1">
+    
+<table class="table table-bordered" id="build-info">
+  <thead>
+    <tr>
+      <th>Project</th>
+              <th>Number</th>
+            <th>Date</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr class="info">
+      <td>AMAEB</td>
+              <td>1</td>
+            <td>14 May 2019, 00:07</td>
+    </tr>
+  </tbody>
+</table>
+
+  </div>
+  <div class="col-md-3 col-md-offset-2">
+      </div>
+</div>
+
+
+<div id="report-lead" class="container-fluid">
+  <div class="col-md-10 col-md-offset-1">
+    <h2>Steps Statistics</h2>
+          <p>The following graph shows step statistics for this build. Below list is based on results.
+ step does not provide information about result then is not listed below.
+ Additionally @Before and @After are not counted because they are part of the scenarios, not steps.</p>
+      </div>
+</div>
+
+<div class="container-fluid" id="report">
+  <div class="row">
+    <div class="col-md-10 col-md-offset-1">
+      <table id="tablesorter" class="stats-table table-hover">
+
+        <thead>
+          <tr class="header">
+            <th>Implementation</th>
+            <th>Occurrences</th>
+            <th>Average duration</th>
+            <th>Max duration</th>
+            <th>Total durations</th>
+            <th>Ratio</th>
+          </tr>
+        </thead>
+
+        <tbody>
+                      <tr>
+              <td class="location">Hooks.InitializeTest()</td>
+              <td>1</td>
+              <td class="duration" data-value="2692414700">2.692</td>
+              <td class="duration" data-value="2692414700">2.692</td>
+              <td class="duration" data-value="2692414700">2.692</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">Hooks.TearDownTest()</td>
+              <td>1</td>
+              <td class="duration" data-value="334883400">0.334</td>
+              <td class="duration" data-value="334883400">0.334</td>
+              <td class="duration" data-value="334883400">0.334</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">MyStepdefs.clickAlertOKButton()</td>
+              <td>1</td>
+              <td class="duration" data-value="10198220900">10.198</td>
+              <td class="duration" data-value="10198220900">10.198</td>
+              <td class="duration" data-value="10198220900">10.198</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">MyStepdefs.clickLogoutButton()</td>
+              <td>1</td>
+              <td class="duration" data-value="2683725200">2.683</td>
+              <td class="duration" data-value="2683725200">2.683</td>
+              <td class="duration" data-value="2683725200">2.683</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">MyStepdefs.clickOnAddNoteButton()</td>
+              <td>1</td>
+              <td class="duration" data-value="10120653100">10.120</td>
+              <td class="duration" data-value="10120653100">10.120</td>
+              <td class="duration" data-value="10120653100">10.120</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">MyStepdefs.clickOnAddPolicy()</td>
+              <td>1</td>
+              <td class="duration" data-value="10135642100">10.135</td>
+              <td class="duration" data-value="10135642100">10.135</td>
+              <td class="duration" data-value="10135642100">10.135</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">MyStepdefs.clickOnDeleteButton()</td>
+              <td>1</td>
+              <td class="duration" data-value="5221357000">5.221</td>
+              <td class="duration" data-value="5221357000">5.221</td>
+              <td class="duration" data-value="5221357000">5.221</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">MyStepdefs.clickOnHistoryTab()</td>
+              <td>1</td>
+              <td class="duration" data-value="10123928600">10.123</td>
+              <td class="duration" data-value="10123928600">10.123</td>
+              <td class="duration" data-value="10123928600">10.123</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">MyStepdefs.clickOnImportPoliciesButton()</td>
+              <td>1</td>
+              <td class="duration" data-value="15143318000">15.143</td>
+              <td class="duration" data-value="15143318000">15.143</td>
+              <td class="duration" data-value="15143318000">15.143</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">MyStepdefs.clickOnImportSubmitButton()</td>
+              <td>1</td>
+              <td class="duration" data-value="2088017500">2.088</td>
+              <td class="duration" data-value="2088017500">2.088</td>
+              <td class="duration" data-value="2088017500">2.088</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">MyStepdefs.clickOnLogoutIcon()</td>
+              <td>1</td>
+              <td class="duration" data-value="79517000">0.079</td>
+              <td class="duration" data-value="79517000">0.079</td>
+              <td class="duration" data-value="79517000">0.079</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">MyStepdefs.clickOnMyLostBusinessKPI()</td>
+              <td>1</td>
+              <td class="duration" data-value="2097984300">2.097</td>
+              <td class="duration" data-value="2097984300">2.097</td>
+              <td class="duration" data-value="2097984300">2.097</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">MyStepdefs.clickOnMyNewBusinessKPI()</td>
+              <td>1</td>
+              <td class="duration" data-value="4152007900">4.152</td>
+              <td class="duration" data-value="4152007900">4.152</td>
+              <td class="duration" data-value="4152007900">4.152</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">MyStepdefs.clickOnMyProspectsKPI()</td>
+              <td>1</td>
+              <td class="duration" data-value="8095285100">8.095</td>
+              <td class="duration" data-value="8095285100">8.095</td>
+              <td class="duration" data-value="8095285100">8.095</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">MyStepdefs.clickOnMyRenewalsKPI()</td>
+              <td>1</td>
+              <td class="duration" data-value="4130712400">4.130</td>
+              <td class="duration" data-value="4130712400">4.130</td>
+              <td class="duration" data-value="4130712400">4.130</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">MyStepdefs.clickOnNotesTab()</td>
+              <td>1</td>
+              <td class="duration" data-value="10170518000">10.170</td>
+              <td class="duration" data-value="10170518000">10.170</td>
+              <td class="duration" data-value="10170518000">10.170</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">MyStepdefs.clickOnPatraCorpLink()</td>
+              <td>1</td>
+              <td class="duration" data-value="5643264000">5.643</td>
+              <td class="duration" data-value="5643264000">5.643</td>
+              <td class="duration" data-value="5643264000">5.643</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">MyStepdefs.clickOnReportsButton()</td>
+              <td>1</td>
+              <td class="duration" data-value="9496726600">9.496</td>
+              <td class="duration" data-value="9496726600">9.496</td>
+              <td class="duration" data-value="9496726600">9.496</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">MyStepdefs.clickOnResetButton()</td>
+              <td>1</td>
+              <td class="duration" data-value="10176365600">10.176</td>
+              <td class="duration" data-value="10176365600">10.176</td>
+              <td class="duration" data-value="10176365600">10.176</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">MyStepdefs.clickOnSubmitAndCloseButton()</td>
+              <td>6</td>
+              <td class="duration" data-value="15108992950">15.108</td>
+              <td class="duration" data-value="15108992950">15.136</td>
+              <td class="duration" data-value="90653957700">1:30.653</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">MyStepdefs.clickOnSubmitButton()</td>
+              <td>1</td>
+              <td class="duration" data-value="14199229900">14.199</td>
+              <td class="duration" data-value="14199229900">14.199</td>
+              <td class="duration" data-value="14199229900">14.199</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">MyStepdefs.clickOnYTDKPI()</td>
+              <td>1</td>
+              <td class="duration" data-value="4164688000">4.164</td>
+              <td class="duration" data-value="4164688000">4.164</td>
+              <td class="duration" data-value="4164688000">4.164</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">MyStepdefs.enterAddPolicyDetails(DataTable)</td>
+              <td>1</td>
+              <td class="duration" data-value="21419262800">21.419</td>
+              <td class="duration" data-value="21419262800">21.419</td>
+              <td class="duration" data-value="21419262800">21.419</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">MyStepdefs.getTheKpiCOunt()</td>
+              <td>1</td>
+              <td class="duration" data-value="5304406200">5.304</td>
+              <td class="duration" data-value="5304406200">5.304</td>
+              <td class="duration" data-value="5304406200">5.304</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">MyStepdefs.getTheMyLostBusinessKPICount()</td>
+              <td>1</td>
+              <td class="duration" data-value="10058537200">10.058</td>
+              <td class="duration" data-value="10058537200">10.058</td>
+              <td class="duration" data-value="10058537200">10.058</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">MyStepdefs.getTheMyNewBusinessKPICount()</td>
+              <td>1</td>
+              <td class="duration" data-value="10057180400">10.057</td>
+              <td class="duration" data-value="10057180400">10.057</td>
+              <td class="duration" data-value="10057180400">10.057</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">MyStepdefs.getTheMyProspectsKPICount()</td>
+              <td>1</td>
+              <td class="duration" data-value="10034660800">10.034</td>
+              <td class="duration" data-value="10034660800">10.034</td>
+              <td class="duration" data-value="10034660800">10.034</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">MyStepdefs.getTheMyRenewalsKPICount()</td>
+              <td>1</td>
+              <td class="duration" data-value="10075001600">10.075</td>
+              <td class="duration" data-value="10075001600">10.075</td>
+              <td class="duration" data-value="10075001600">10.075</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">MyStepdefs.iClickOnSignInButton()</td>
+              <td>1</td>
+              <td class="duration" data-value="41316943100">41.316</td>
+              <td class="duration" data-value="41316943100">41.316</td>
+              <td class="duration" data-value="41316943100">41.316</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">MyStepdefs.iEnterLoginCredentials(DataTable)</td>
+              <td>1</td>
+              <td class="duration" data-value="231369600">0.231</td>
+              <td class="duration" data-value="231369600">0.231</td>
+              <td class="duration" data-value="231369600">0.231</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">MyStepdefs.iMoveTheRecordToNewBusiness(DataTable)</td>
+              <td>1</td>
+              <td class="duration" data-value="14196219600">14.196</td>
+              <td class="duration" data-value="14196219600">14.196</td>
+              <td class="duration" data-value="14196219600">14.196</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">MyStepdefs.iMoveTheRecordToRenewal(DataTable)</td>
+              <td>1</td>
+              <td class="duration" data-value="14165290900">14.165</td>
+              <td class="duration" data-value="14165290900">14.165</td>
+              <td class="duration" data-value="14165290900">14.165</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">MyStepdefs.iNavigateToLoginPageOfEBApp()</td>
+              <td>1</td>
+              <td class="duration" data-value="4636912500">4.636</td>
+              <td class="duration" data-value="4636912500">4.636</td>
+              <td class="duration" data-value="4636912500">4.636</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">MyStepdefs.iSearchARecordWithTheEmployerGroup(DataTable)</td>
+              <td>5</td>
+              <td class="duration" data-value="10136730060">10.136</td>
+              <td class="duration" data-value="10136730060">10.151</td>
+              <td class="duration" data-value="50683650300">50.683</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">MyStepdefs.iSelectARecordUnderPoliciesTab()</td>
+              <td>6</td>
+              <td class="duration" data-value="3122406766">3.122</td>
+              <td class="duration" data-value="3122406766">3.378</td>
+              <td class="duration" data-value="18734440600">18.734</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">MyStepdefs.inputValuesInTheNotePopUp(DataTable)</td>
+              <td>1</td>
+              <td class="duration" data-value="10283450000">10.283</td>
+              <td class="duration" data-value="10283450000">10.283</td>
+              <td class="duration" data-value="10283450000">10.283</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">MyStepdefs.inputValuesInTheQuestionsTab(DataTable)</td>
+              <td>1</td>
+              <td class="duration" data-value="10374444500">10.374</td>
+              <td class="duration" data-value="10374444500">10.374</td>
+              <td class="duration" data-value="10374444500">10.374</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">MyStepdefs.moveTheRecordToLostBusiness(DataTable)</td>
+              <td>1</td>
+              <td class="duration" data-value="14214634900">14.214</td>
+              <td class="duration" data-value="14214634900">14.214</td>
+              <td class="duration" data-value="14214634900">14.214</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">MyStepdefs.moveTheRecordToWorkInProgress(DataTable)</td>
+              <td>1</td>
+              <td class="duration" data-value="14107896700">14.107</td>
+              <td class="duration" data-value="14107896700">14.107</td>
+              <td class="duration" data-value="14107896700">14.107</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">MyStepdefs.moveTheRecordToYTD(DataTable)</td>
+              <td>1</td>
+              <td class="duration" data-value="7175368900">7.175</td>
+              <td class="duration" data-value="7175368900">7.175</td>
+              <td class="duration" data-value="7175368900">7.175</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">MyStepdefs.navigateToPolicyDetailsSection(DataTable)</td>
+              <td>1</td>
+              <td class="duration" data-value="11122255100">11.122</td>
+              <td class="duration" data-value="11122255100">11.122</td>
+              <td class="duration" data-value="11122255100">11.122</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">MyStepdefs.paginationValue(DataTable)</td>
+              <td>1</td>
+              <td class="duration" data-value="6214538200">6.214</td>
+              <td class="duration" data-value="6214538200">6.214</td>
+              <td class="duration" data-value="6214538200">6.214</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">MyStepdefs.searchWithAllTheFiltersInTheGrid(DataTable)</td>
+              <td>1</td>
+              <td class="duration" data-value="12325041800">12.325</td>
+              <td class="duration" data-value="12325041800">12.325</td>
+              <td class="duration" data-value="12325041800">12.325</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                      <tr>
+              <td class="location">MyStepdefs.userSearchesWithTheFollowingGlobalValue(DataTable)</td>
+              <td>1</td>
+              <td class="duration" data-value="10171811200">10.171</td>
+              <td class="duration" data-value="10171811200">10.171</td>
+              <td class="duration" data-value="10171811200">10.171</td>
+              <td class="passed">100.00%</td>
+            </tr>
+                  </tbody>
+
+        <tfoot class="total">
+          <tr>
+            <td>44</td>
+            <td>58</td>
+            <td class="duration">9.288</td>
+            <td class="duration">1:30.653</td>
+            <td class="duration">8:58.705</td>
+            <td>Totals</td>
+          </tr>
+        </tfoot>
+
+      </table>
+    </div>
+  </div>
+</div>
+
+
+<nav class="navbar navbar-default" id="footer">
+  <div class="container-fluid">
+    <p class="navbar-text navbar-right">
+        <small>generate Cucumber HTML reports via:&nbsp;</small>
+        <a class="navbar-link" href="https://github.com/jenkinsci/cucumber-reports-plugin">Jenkins Plugin</a> |
+        <a class="navbar-link" href="https://github.com/damianszczepanik/cucumber-reporting">Standalone</a> |
+        <a class="navbar-link" href="https://github.com/damianszczepanik/cucumber-sandwich">Sandwich</a> |
+        <a class="navbar-link" href="https://github.com/damianszczepanik/maven-cucumber-reporting">Maven</a>
+        &nbsp;&nbsp;
+    </p>
+  </div>
+</nav>
+
+</body>
+</html>
